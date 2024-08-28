@@ -1,0 +1,195 @@
+
+
+header{
+    font-family: Gilgan;
+    margin: 30px;
+    border-bottom-style: solid;
+    border-color: #D62E2B;
+}
+
+.navbar {
+    display: flex;
+}
+
+.logo{
+    text-align:center;
+    width:23%;
+    padding:1%;;
+}
+
+nav{
+    padding:1%;
+}
+
+.positionBottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.inline-block{
+    display: flex;
+    vertical-align:top;   
+}
+
+.positionBottom li{
+    margin-left: 10px;
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+body{
+    background-color: #EBE4D9;
+}
+
+h1{
+    font-family:Dream Cottage;
+    color: #D62E2B;
+    text-align: center;
+    font-size: 75px;
+}
+
+h2{font-family:Dream Cottage;
+    color: #D62E2B;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: left;
+    
+}
+
+h3{
+    font-family: Gilgan;
+    font-size: 16px;
+}
+
+h4{
+    font-family: Gilgan;
+    font-size: 14px
+}
+
+.myWork{
+    border-color: #D62E2B;
+    border-style: solid;
+    margin-top: 100px;
+    margin-left: 10px ;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    padding: 100px;
+}
+
+/*.flexContainer{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.research{
+    border-style: solid;
+    border-color: #D62E2B;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
+   
+}
+
+.interface{
+    border-style: solid;
+    border-color: #D62E2B;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.web{
+    border-style: solid;
+    border-color: #D62E2B;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}*/
+
+.flexContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+.gridItem1{
+    border-style: solid;
+    border-color: #D62E2B;
+    margin: 30px;
+    padding: 10px;
+}
+
+.gridItem2{
+    border-style: solid;
+    border-color: #D62E2B;
+    margin: 30px;
+    padding: 10px;
+}
+
+.gridItem3{
+    border-style: solid;
+    border-color: #D62E2B;
+    margin: 30px;
+    padding: 10px;
+}
+
+li{
+    font-family: Gilgan;
+}
+
+
+footer{ 
+    border-style: solid;
+    border-color: #D62E2B;
+    margin: 30px;
+}
+
+.footer{ 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}   
+
+.footer li {
+    margin-left: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600){
+    .flexContainer{
+        margin: 0px 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "gridItem1"
+            "gridItem2"
+            "gridItem3"
+            
+            ;
+        
+        
+    }
+}
