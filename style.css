@@ -9,6 +9,7 @@ header{
 
 .navbar {
     display: flex;
+    justify-content: space-between;
 }
 
 .logo{
@@ -24,7 +25,12 @@ nav{
 .positionBottom{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
+
+.talk{
+    text-align: right;
+    align-items: center;
 }
 
 .inline-block{
@@ -38,7 +44,7 @@ nav{
 
 ul{
     list-style-type: none;
-    text-align: center;
+  
 }
 
 body{
@@ -58,6 +64,7 @@ h2{font-family:Dream Cottage;
     font-size: 18px;
     display: flex;
     justify-content: left;
+    padding: 30px;
     
 }
 
@@ -75,57 +82,27 @@ h4{
     border-color: #D62E2B;
     border-style: solid;
     margin-top: 100px;
-    margin-left: 10px ;
-    margin-right: 30px;
-    padding: 20px;
+    margin-left: 100px ;
+    margin-right: 100px;
+    padding: 0px;
 }
 
 
 .container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    margin:100px;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .column {
-    padding: 100px;
+    padding: 30px;
 }
 
-/*.flexContainer{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-.research{
-    border-style: solid;
-    border-color: #D62E2B;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-right: 20px;
-   
-}
-
-.interface{
-    border-style: solid;
-    border-color: #D62E2B;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin-right: 20px;
-}
-
-.web{
-    border-style: solid;
-    border-color: #D62E2B;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}*/
 
 .flexContainer{
     display: grid;
+    margin: 100px;
     grid-template-columns: repeat(3, 1fr);
     
     
@@ -135,25 +112,27 @@ h4{
     border-style: solid;
     border-color: #D62E2B;
     margin: 30px;
-    padding: 10px;
+    padding: 100px;
+    text-align: left;
 }
 
 .gridItem2{
     border-style: solid;
     border-color: #D62E2B;
     margin: 30px;
-    padding: 10px;
+    padding: 100px;
 }
 
 .gridItem3{
     border-style: solid;
     border-color: #D62E2B;
     margin: 30px;
-    padding: 10px;
+    padding: 100px;
 }
 
 li{
     font-family: Gilgan;
+    margin-bottom: 10px;
 }
 
 
@@ -161,22 +140,43 @@ footer{
     border-style: solid;
     border-color: #D62E2B;
     margin: 30px;
+    padding: 30px;
 }
 
 .footer{ 
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }   
 
-.footer li {
-    margin-left: 15px;
+.connect{
+    font-family:Dream Cottage;
+    color: #D62E2B;
+    font-size: 55px;
+
 }
+
+
 
 .flex {
     display: flex;
     justify-content: center;
 }
+
+/* .modal {
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
 
 @media only screen and (max-width: 600){
     .flexContainer{

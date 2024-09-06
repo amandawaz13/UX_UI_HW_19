@@ -3,20 +3,27 @@
     <head>
         <link rel="stylesheet" href="style.css"/>
         <title></title>
+        <script src="js/index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     </head>
 
         <header>
           <nav class="navbar">
-            <div class="logo">
-              <img src="logo.png" alt="logo"/>
-            </div>
+            <div class="positionBottom">
+              <img src="/images/logo.png" alt="logo"/>
+           
     
             <ul class="positionBottom">
                 <li>About Me</li>
-                <li>Skills</li>
                 <li>My Work</li>
-                <li class="talk">Lets Talk</li>
               </ul>
+            </div>
+
+              <ul class="talk">
+                <img src="images/LetsTalk.png">
+            
+            </ul>
+     
           </nav>
         </header>
 
@@ -24,36 +31,28 @@
     <h1>WORK.</h1>
 
     <div class="container">
-        <div class="column">
-            <div>
-                <img src="CSA.png"/>
+
+        <div class="row">
+                <img src="images/CSA.png" width="250px" height="250px"/>
                 <h3>CANADIAN SPACE AGENCY</h3>
                 <h4>2024</h4>
-            </div>
-
-            <div class="row">
-                <img src="Rectangle 26.png"/>
-                <h3>COMING SOON</h3>
-                <h4>2024</h4>
-            </div>
         </div>
 
-        <div class="column">
-            <div>
-                <img src="HOPE.png"/>
+        <div class="row">
+                <img src="images/HOPE.png" width="250px" height="250px"/>
                 <h3>HOPE</h3>
                 <h4>2024</h4>
-            </div>
+        </div>
 
-            <div class="row">
-                <img src="SAUNA.png"/>
+         <div class="row">
+                <img src="images/SAUNA.png" width="250px" height="250px"/>
                 <h3>SAUNA APP</h3>
                 <h4>2024</h4></div>
-            </div>
         </div>
+        
     </div>
 
-</section>
+</section> 
 
 <section class="mySkills">
     <div>
@@ -87,15 +86,25 @@
 
 </section>
 
-<footer>
-    <ul class="footer">
-      <li>About</li>
-      <li>Skills</li>
-      <li>Work</li>
-      <li>Contact</li>
-    </ul>
+<footer class="footer">
+    <div class="connect">Lets Connect</div>
+    <h3>amandawaz13@gmail.com</h3>
   </footer>
 
-</html>
+  <div class="modal"><!-- Place at bottom of page --></div>
 
+
+<script>
+     $body = $("body");
+
+     $(document).ready(function() {
+    $(document).on({
+        ajaxStart: function() { $body.addClass("loading");},
+        ajaxStop: function() { $body.removeClass("loading")}
+    });
+
+   $('.flexContainer').css('display', 'none');
+   $('.flexContainer').fadeIn(1500);
+});
+</script>
 </html>
